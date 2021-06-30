@@ -1,18 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <EditText
+        android:hint="Monthly Savings"
+        android:id="@+id/monthlySaving"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Intrest Rate"
+        android:id="@+id/intrestRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:hint="Your current age"
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:hint="Planned Retirment age"
+        android:id="@+id/retirmentAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:hint="Current Saving"
+        android:id="@+id/currentSaving"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:text="Calculate"
+        android:layout_width="match_parent"
+        android:id="@+id/calculate"
+        android:layout_height="wrap_content"/>
+
     <TextView
+        android:id="@+id/resultTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
