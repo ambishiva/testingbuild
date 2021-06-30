@@ -18,5 +18,7 @@ class MainActivity : AppCompatActivity() {
         )
         Toast.makeText(this,"added test branches",Toast.LENGTH_SHORT).show()
         Toast.makeText(this,"added develop branches",Toast.LENGTH_SHORT).show()
+
+        Toast.makeText(this,"added feeature-3 branches",Toast.LENGTH_SHORT).show()
     }
 }
