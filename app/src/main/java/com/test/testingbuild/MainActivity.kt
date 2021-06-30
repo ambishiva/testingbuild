@@ -1,6 +1,7 @@
 package com.test.testingbuild
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.microsoft.appcenter.AppCenter
 import com.microsoft.appcenter.analytics.Analytics
@@ -15,5 +16,6 @@ class MainActivity : AppCompatActivity() {
             application, "1b7d5ec8-6c4a-4af7-8a2b-204939ace628",
             Analytics::class.java, Crashes::class.java
         )
+        Toast.makeText(this,"added test branch",Toast.LENGTH_SHORT).show()
     }
 }
