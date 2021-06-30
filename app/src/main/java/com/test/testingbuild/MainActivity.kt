@@ -16,6 +16,6 @@ class MainActivity : AppCompatActivity() {
             application, "1b7d5ec8-6c4a-4af7-8a2b-204939ace628",
             Analytics::class.java, Crashes::class.java
         )
-        Toast.makeText(this,"added test branch",Toast.LENGTH_SHORT).show()
+        Toast.makeText(this,"added test branches",Toast.LENGTH_SHORT).show()
     }
 }
