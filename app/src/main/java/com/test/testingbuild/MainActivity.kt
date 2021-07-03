@@ -3,6 +3,7 @@ package com.test.testingbuild
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.microsoft.appcenter.AppCenter
 import com.microsoft.appcenter.analytics.Analytics
@@ -17,9 +18,16 @@ class MainActivity : AppCompatActivity() {
             application, "1b7d5ec8-6c4a-4af7-8a2b-204939ace628",
             Analytics::class.java, Crashes::class.java
         )
+
+        val future = Crashes.hasCrashedInLastSession()
+        future.thenAccept {
+            if (it) {
+                Toast.makeText(this, "Sorry About That", Toast.LENGTH_SHORT).show()
+            }
+        }
         findViewById<Button>(R.id.calculate).setOnClickListener {
             //throw Exception("Something went wrong")
-            // Crashes.generateTestCrash()
+             Crashes.generateTestCrash()
             try {
 
                 val interestRate =

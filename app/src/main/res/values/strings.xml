@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">TestingBuild</string>
+    <string name="calculate">Calculate</string>
+    <string name="current_saving">Current Saving</string>
+    <string name="planned_retirment_age">Planned Retirment age</string>
+    <string name="your_current_age">Your current age</string>
+    <string name="intrest_rate">Intrest Rate</string>
+    <string name="monthly_savings">Monthly Savings</string>
 </resources>
