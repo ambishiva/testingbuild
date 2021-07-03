@@ -8,7 +8,8 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:hint="Monthly Savings"
+        android:inputType="number"
+        android:hint="@string/monthly_savings"
         android:id="@+id/monthlySaving"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -17,34 +18,37 @@
     <EditText
         android:ems="10"
         android:inputType="numberDecimal"
-        android:hint="Intrest Rate"
+        android:hint="@string/intrest_rate"
         android:id="@+id/intrestRate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <EditText
-        android:hint="Your current age"
+        android:inputType="number"
+        android:hint="@string/your_current_age"
         android:id="@+id/age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
 
     <EditText
-        android:hint="Planned Retirment age"
+        android:inputType="number"
+        android:hint="@string/planned_retirment_age"
         android:id="@+id/retirmentAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
 
     <EditText
-        android:hint="Current Saving"
+        android:inputType="number"
+        android:hint="@string/current_saving"
         android:id="@+id/currentSaving"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
 
     <Button
-        android:text="Calculate"
+        android:text="@string/calculate"
         android:layout_width="match_parent"
         android:id="@+id/calculate"
         android:layout_height="wrap_content"/>
